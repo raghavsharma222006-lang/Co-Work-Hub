@@ -1,0 +1,99 @@
+body {
+  font-family: Arial;
+  background: rgb(169, 204, 215);
+  margin: 0;
+}
+
+.booking {
+  padding: 40px;
+  text-align: center;
+}
+
+.booking h1 {
+  margin-bottom: 20px;
+}
+
+.booking-card {
+  background: white;
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgb(2, 2, 21);
+}
+
+#bookingMsg {
+  min-height: 20px;
+  margin: 15px 0 0;
+  color: #15803d;
+  font-weight: bold;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+input,
+select {
+  width: 100%;
+  min-width: 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #11022d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1674a3;
+}
+
+@media (max-width: 600px) {
+  .booking {
+    padding: 28px 16px 36px;
+  }
+
+  .booking h1 {
+    font-size: clamp(1.6rem, 7vw, 2rem);
+    margin-bottom: 16px;
+  }
+
+  .booking-card {
+    padding: 20px 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgb(2 2 21 / 35%);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  input,
+  select,
+  button {
+    min-height: 44px;
+  }
+
+  button {
+    margin-top: 16px;
+  }
+
+  #bookingMsg {
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+}

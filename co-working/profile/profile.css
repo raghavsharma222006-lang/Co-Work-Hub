@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: rgb(169, 204, 215);
+    color: #172033;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    min-height: 65px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-bottom: 1px solid #e5e9f0;
+}
+
+.logo {
+    color: #15803d;
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #0f172a;
+}
+
+#logoutButton {
+    border: 1px solid #d6dce5;
+    border-radius: 6px;
+    background: #fff;
+    padding: 8px 13px;
+    cursor: pointer;
+}
+
+.main {
+    max-width: 900px;
+    margin: auto;
+    padding: 35px 24px;
+}
+
+.main h1 {
+    margin: 0 0 22px;
+    font-size: 27px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.box {
+    padding: 22px;
+    border: 1px solid #e5e9f0;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #edf0f4;
+}
+
+.title h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.title a {
+    color: #15803d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.box>p {
+    padding: 12px 0;
+    margin: 0;
+    border-bottom: 1px solid #edf0f4;
+}
+
+.box>p:last-child {
+    border: 0;
+}
+
+.box>p span {
+    word-break: break-word;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid #edf0f4;
+}
+
+.item:last-child {
+    border: 0;
+}
+
+.item h3 {
+    font-size: 15px;
+    margin: 0 0 6px;
+}
+
+.item p {
+    color: #64748b;
+    font-size: 13px;
+    margin: 4px 0;
+}
+
+.status {
+    color: #166534;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.empty {
+    padding: 26px 0 5px;
+    color: #64748b;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .header {
+        padding: 0 20px;
+    }
+
+    .main {
+        padding: 28px 18px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login | CoWork Hub</title>
+	<link rel="stylesheet" href="login.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="icon" href="../images/Co work hub.png"/>
+</head>
+
+<body>
+	<main class="page">
+		<section class="card" aria-labelledby="login-title">
+			<a class="brand" href="../homepage/index.html"><i class="ri-building-4-line"></i> CoWork<span>Hub</span></a>
+			<h1 id="login-title">Welcome back</h1>
+			<p class="subtext">Login to manage your workspace bookings.</p>
+
+			<form id="loginForm">
+				<label for="email">Email address</label>
+				<div class="input"><i class="ri-mail-line"></i><input id="email" type="email"
+						placeholder="abc@gmail.com" required></div>
+
+				<label for="password">Password</label>
+				<div class="input"><i class="ri-lock-line"></i><input id="password" type="password"
+						placeholder="Enter your password" required><button class="eye" type="button"
+						aria-label="Show password"><i class="ri-eye-line"></i></button></div>
+
+				<div class="options"><label class="remember"><input type="checkbox"> Remember me</label><a
+						href="#">Forgot password?</a></div>
+				<button class="button" type="submit">Login</button>
+				<p id="message" class="msg" aria-live="polite"></p>
+			</form>
+
+			<p class="register">New to CoWork Hub? <a href="register.html">Create an account</a></p>
+		</section>
+	</main>
+	<script src="login.js"></script>
+</body>
+
+</html>

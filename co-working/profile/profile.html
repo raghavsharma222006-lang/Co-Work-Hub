@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile|CoWork Hub</title>
+  <link rel="stylesheet" href="profile.css">
+  <link rel="icon" href="../images/Co work hub.png"/>
+</head>
+
+<body>
+  <header class="header"><a class="logo" href="../homepage/index.html">CoWork<span>Hub</span></a><button id="logoutButton"
+      type="button">Logout</button></header>
+  <main class="main">
+    <h1>My Profile</h1>
+    <section class="grid">
+      <article class="box">
+        <div class="title">
+          <h2>User details</h2>
+        </div>
+        <p><b>Name:</b> <span id="userName">-</span></p>
+        <p><b>Email:</b> <span id="userEmail">-</span></p>
+        <p><b>Phone:</b> <span id="userPhone">Not added</span></p>
+      </article>
+      <article class="box">
+        <div class="title">
+          <h2>My bookings</h2><a href="../booking/booking.html">+ Book</a>
+        </div>
+        <div id="bookingsList"></div>
+      </article>
+    </section>
+  </main>
+  <script src="profile.js"></script>
+</body>
+
+</html>

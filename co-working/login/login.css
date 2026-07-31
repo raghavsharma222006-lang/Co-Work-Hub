@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(169, 204, 215);
+    color: #0f172a;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+.card {
+    width: 100%;
+    max-width: 410px;
+    padding: 36px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, .12);
+}
+
+.brand {
+    display: block;
+    margin-bottom: 30px;
+    color: #15803d;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.brand span {
+    color: #0f172a;
+}
+
+.brand i {
+    margin-right: 5px;
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+}
+
+.subtext {
+    margin: 0 0 25px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+label {
+    display: block;
+    margin: 16px 0 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    padding: 0 12px;
+}
+
+.input:focus-within {
+    border-color: #22c55e;
+    box-shadow: 0 0 0 3px #dcfce7;
+}
+
+.input>i {
+    color: #64748b;
+}
+
+.input input {
+    width: 100%;
+    padding: 12px 10px;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+}
+
+.eye {
+    border: 0;
+    background: none;
+    color: #64748b;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.eye:hover {
+    color: #15803d;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.options a,
+.register a {
+    color: #15803d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.remember input {
+    accent-color: #16a34a;
+}
+
+.button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    border: 0;
+    border-radius: 7px;
+    background: #16a34a;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #15803d;
+}
+
+.msg {
+    min-height: 18px;
+    margin: 12px 0 0;
+    color: #15803d;
+    text-align: center;
+    font-size: 13px;
+}
+
+.register {
+    margin: 23px 0 0;
+    color: #64748b;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 450px) {
+    .card {
+        padding: 28px 22px;
+    }
+
+    .options {
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
